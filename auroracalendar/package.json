@@ -1,0 +1,25 @@
+{
+  "name": "aurora-calendar",
+  "version": "1.0.0",
+  "description": "Calendar with weather and animations",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.aurora.calendar",
+    "productName": "Aurora Calendar",
+    "win": {
+      "target": "portable",
+      "requestedExecutionLevel": "asInvoker"
+    },
+    "directories": {
+      "output": "dist"
+    }
+  }
+}
